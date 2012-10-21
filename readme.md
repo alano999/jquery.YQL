@@ -18,7 +18,8 @@ Only the success callback will work, due to the underlying JSONP transport. Comp
 Example, making use of the free www.webservicex.net:-
 
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/jquery.yql.js">
+	<script type="text/javascript" src="scripts/jquery.yql.js"></script>
+	<script type="text/javascript">
 		function showResponse(xml) {
 			var $list = $("ul#list");
 			$("Stock", xml).children().each(function () {
